@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit page</title>
+  <style>
+    h1 {
+      margin-bottom: 2em;
+    }
+    body {
+      background-image: url('https://mcdn.wallpapersafari.com/medium/53/23/PHTGDq.jpg');
+      background-size: cover;
+      text-align: center;
+    }
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      width:50%; 
+      border:2px solid black;
+    }
+    tr {
+      border:2px solid black; 
+      height: 3em;
+    }
+    td {
+      border:2px solid black; 
+      font-size: large;
+    }
+    th {
+      border:2px solid black; 
+      font-weight: bold; 
+      font-size: large;
+    }
+  </style>
+</head>
+<body>
+  <h1>For Customer ID: {{c}} and Lateral ID: {{l}}</h1>
+  <table>
+    <tr>
+      <th></th>
+      <th>Actual Value</th>
+      <th>Predicted Value</th>
+    </tr>
+    <tr>
+      <td style="font-weight: bold; ">Severity Level</td>
+      <td>{{s2}}</td>
+      <td>{{s1}}</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold; ">Lateral Anomaly Status</td>
+      <td>{{xa}}</td>
+      <td>{{x}}</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold; ">Customer Anomaly Status</td>
+      <td>{{xia}}</td>
+      <td>{{xi}}</td>
+    </tr>
+  </table>
+</body>
+</html>

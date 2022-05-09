@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTP</title>
+  <style>
+    input {
+      background-color: lightgrey;
+      color: black; 
+      margin-left: 1em; 
+      margin-right: 1em; 
+      margin-top: 0.5em; 
+      margin-bottom: 2.5em; 
+      height: 2em;
+    }
+    label {
+      font-size: large;
+      font-weight: bold;
+    }
+    h1 {
+      font-family: 'Lucida Sans';
+      margin-bottom: 2em;
+    }
+    body{
+      background-image: url('https://mcdn.wallpapersafari.com/medium/53/23/PHTGDq.jpg') ;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enter your Customer ID and Lateral ID to get information about anomaly level and sensitivity.</h1>
+
+  <form action="/sub" method="POST">
+    <div>
+      <label>Customer ID</label>
+      <input type="number" name="Customer ID" placeholder="Customer ID">
+      <label>Lateral ID</label>
+      <input type="number" name="Lateral ID" placeholder="Lateral ID">
+    </div>
+    <div><input style="height: 2em; font-size: large; font-weight: bold; border-style: double; border-color: black;" type="submit"></div>
+  </form>
+
+</body>
+</html>
